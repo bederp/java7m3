@@ -53,13 +53,15 @@ public class AnonymousInnerExample {
     }
 
     private static void setRegisterListener(JButton registerButton) {
-        registerButton.addActionListener(new ActionListener() {
+        ActionListener registerListener = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 JOptionPane.showMessageDialog((Component) e.getSource(),
                         "button has been pressed");
             }
-        });
+        };
+
+        registerButton.addActionListener(registerListener);
     }
 
     private static void setLoginListener(JButton loginButton) {
