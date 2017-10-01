@@ -24,10 +24,6 @@ public class Client {
         return name;
     }
 
-    public Gender getGender() {
-        return gender;
-    }
-
     public Account[] getAccounts() {
         return Arrays.copyOf(accounts, accounts.length);
     }
@@ -44,5 +40,4 @@ public class Client {
     public String toString() {
         return getClientGreeting();
     }
-
 }

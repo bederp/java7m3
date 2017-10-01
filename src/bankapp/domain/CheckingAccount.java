@@ -9,11 +9,6 @@ public class CheckingAccount extends AbstractAccount {
         this.overdraft = overdraft;
     }
 
-    @Override
-    public void withdraw(double value) {
-        super.withdraw(value);
-    }
-
     public double getOverdraft() {
         return overdraft;
     }

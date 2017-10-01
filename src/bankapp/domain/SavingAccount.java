@@ -9,5 +9,4 @@ public class SavingAccount extends AbstractAccount {
     public double maximumAmountToWithdraw() {
         return getBalance();
     }
-
 }

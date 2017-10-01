@@ -27,7 +27,6 @@ public class BankApplication {
         account1.withdraw(10);
 
         account2.withdraw(90);
-
         account2.withdraw(100);
 
         BankService.addClient(bank, client1);
